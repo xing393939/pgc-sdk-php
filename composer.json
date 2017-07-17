@@ -1,0 +1,8 @@
+{
+    "name": "xing393939/php-upload-sdk",
+    "description": "A short description of what your package does",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {}
+}
