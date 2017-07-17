@@ -1,4 +1,4 @@
-<?php namespace xing393939\php-upload-sdk;
+<?php namespace xing393939\phpUploadSdk;
 
 class Hello
 {

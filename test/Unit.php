@@ -1,5 +1,5 @@
 <?php
-namespace xing393939\php-upload-sdk\test;
+namespace xing393939\phpUploadSdk\test;
 class Unit
 {
     public static function fn()

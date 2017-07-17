@@ -6,8 +6,8 @@
     "minimum-stability": "stable",
     "autoload": {
          "psr-4": {
-            "xing393939\\php-upload-sdk\\": "src/",
-            "xing393939\\php-upload-sdk\\test\\": "test/"
+            "xing393939\\phpUploadSdk\\": "src/",
+            "xing393939\\phpUploadSdk\\test\\": "test/"
          }
     }
 }
