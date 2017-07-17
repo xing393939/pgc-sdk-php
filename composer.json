@@ -4,5 +4,10 @@
     "type": "project",
     "license": "MIT",
     "minimum-stability": "stable",
-    "require": {}
+    "autoload": {
+         "psr-4": {
+            "xing393939\\php-upload-sdk\\": "src/",
+            "xing393939\\php-upload-sdk\\test\\": "test/"
+         }
+    }
 }
