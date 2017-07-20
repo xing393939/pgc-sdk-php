@@ -5,9 +5,8 @@
     "license": "MIT",
     "minimum-stability": "stable",
     "autoload": {
-         "psr-4": {
-            "xing393939\\phpUploadSdk\\": "src/",
-            "xing393939\\phpUploadSdk\\test\\": "test/"
-         }
+        "psr-4": {
+            "xing393939\\": "src/xing393939"
+        }
     }
 }
