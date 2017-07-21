@@ -39,9 +39,9 @@ class Unit
         curl_setopt($ch, CURLOPT_PUT, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
         curl_setopt($ch, CURLOPT_HEADER, true);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_TIMEOUT, 86400);
-        curl_exec($ch);
-        $r = curl_getinfo($ch);
+        $r = curl_exec($ch);
         curl_close($ch);
         return $r;
     }

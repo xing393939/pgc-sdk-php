@@ -111,6 +111,6 @@ class PgcSDK
 
             //$this->uploadRange($filePath, $ppFeature, $fid, $token);
         }
-        return $uploadedRs;
+        return $uploadStr;
     }
 }
