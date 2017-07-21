@@ -98,11 +98,13 @@ class PgcSDK
                 'Accept: */*',
                 'Etag: ' . md5($str)
             ];
-            $uploadStr = Unit::send_put_file($range['upload_url'], $str, $header);
+            $name = "{$range['end']}_{$range['start']}";
+            //$uploadStr = Unit::send_put_file('http://localhost/samples/test.php', $name, $str, $header);
+            $uploadStr = Unit::send_put_file($range['upload_url'], $name, $str, $header);
+            echo $range['upload_url'];
 
             //传分片成功
-            $md5 = strtoupper($uploadId);
-            $url = self::PPC_HOST . "/{$fid}/action/uploaded?fromcp=private_cloud&range_md5={$md5}&bid={$range['bid']}&uploadid={$uploadId}";
+            $url = self::PPC_HOST . "/{$fid}/action/uploaded?fromcp=private_cloud&range_md5={$uploadId}&bid={$range['bid']}&uploadid={$uploadId}";
             $header = [
                 "Authorization: {$token}",
                 'Accept: application/json',
