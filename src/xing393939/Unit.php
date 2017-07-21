@@ -37,7 +37,7 @@ class Unit
         // file upload fields: name => array(type=>'mime/type',content=>'raw data')
         $fileFields = array(
             $name => array(
-                'type' => 'text/plain',
+                'type' => 'application/octet-stream',
                 'content' => $content
             ),
         );

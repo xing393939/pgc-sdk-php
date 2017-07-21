@@ -6,7 +6,7 @@ $delimiter = '-------------' . uniqid();
 // file upload fields: name => array(type=>'mime/type',content=>'raw data')
 $fileFields = array(
     'file1' => array(
-        'type' => 'text/plain',
+        'type' => 'application/octet-stream',
         'content' => '...your raw file content goes here...'
     ), /* ... */
 );
